@@ -21,5 +21,5 @@ while True:
             list.remove(delete_value)
         case 4: # Print
             for item in list:
-                print(item)        
+                print(item)
 
