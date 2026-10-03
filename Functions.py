@@ -75,3 +75,6 @@ def print_Name(firstName,middleName = '',lastName = ''):
 
 name = print_Name(firstName='Darshit',lastName='Kansara')
 print(name)
+
+def sample_function():
+    pass    
