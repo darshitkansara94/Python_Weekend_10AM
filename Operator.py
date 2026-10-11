@@ -179,7 +179,152 @@ print(10 >= 10) # 10 > 10 or 10 == 10
 print(10 <= 12) # 10 < 12 or 10 == 12
 
 #         Logical Operator :
-#         Bitwise Operator :
+#           Logical operator are use to combine multiple conditions. 
+#           And based on that condition we will execute the code.
+#           We will get condition result as True or False.
+#           
+#           Types of logical operator :
+#               And (and) :
+#                   Return true if all the conditions are true else false.
+#                  
+#                   Syntax :
+#                       condition1 and conditions2 and...conditionN
+
+#                   Example :
+
+print("Logical AND Operator Example:")
+if True and True:
+    print("This condition retuen as true")
+else:
+    print("This condition return as false")
+
+x = 19
+y = 20
+
+if x > 10 and y > 15:
+    print("Both conditions are true")
+else:
+    print("At least one condition is false")
+
+#               Or (or) :
+#                   Or operator return True if atleast one condition is True.
+#                   Syntax :
+#                       condition1 or condition2 or...conditionN
+
+#                   Example :
+x = 19
+y = 20
+print("Or Operator")
+if x > 10 or y < 15:
+    print("At least one condition is true")
+else:
+    print("Both conditions are false")
+
+#               Not (not) :
+#                   Not operator reverse a condition's boolean result.
+#                   Syntax :
+#                       not condition
+#                   Example :
+
+x = 9
+if not x > 10:
+    print("This condition is true")
+else:
+    print("This condition is false")
+
+mobile_number = "123456789"  # Example mobile number
+if not len(mobile_number) == 10:
+    print("Invalid mobile number")
+
+
 #         Membership Operator :
+#           Membership operator use to check / validate wheather a value exists or not inside a collection.
+
+#           Types of membership operator :
+#               In (in) :
+#                   In operator use to validate either value is exists or not in collection.
+#                   If value exists then it will return true else false.
+
+#                   Syntax :
+#                       value in collection
+
+#                   Example :
+
+fruits = ["Banana","Apple","Kiwi","Mango"]
+print("Mango" in fruits)
+print("mango".capitalize() in fruits)
+#print("mango" in fruits.lower())
+
+#               Not In (not in) :
+#                   Not in operator checks wheather a value is absent from collections.
+#                   If value is absent then it will return true else false.
+
+#                  Syntax :
+#                      value not in collection
+
+#                   Example :
+print("Mango" not in fruits)
+
+
 #         Identity Operator :
+#           Identity operator useto check wheather two variables referen to the same object in memory.
+#           It is not mandatory that their values are equal.
+
+#           Syntax :
+#                       variable1 is variable2
+#                       variable1 is not variable2
+
+#           Types of identity operator :
+#               Is (is) :
+#                   Is operator checks whether two variables refer to the same object in memory.
+#                   If refere to the same object in memory, it will return true else false.
+
+#               Is Not (is not) :
+#                   Is not operator checks whether two variables do not refer to the same object in memory.
+#                   If they do not refer to the same object in memory, it will return true else false.
+
+#                   Example :
+
+a = [1, 2, 3]
+b = a
+
+print(a is b)
+
+a = [10,20,30,40]
+b = [10,20,30,40]
+
+print(a is b)
+print(a is not b)
+
 #         Ternary Operator :
+#           A ternary operator is a shorthand way of writing an if-else statement.
+#           This statement use when we need to write a single statement based on a condition.
+
+#           Syntax :
+#               value_if_true if condition else value_if_false
+
+            # Simple If else condition
+            # if condition:
+            #     value_if_true
+            # else:
+            #     value_if_false
+
+#           Example :
+age = 20
+status = "Adult" if age >= 20 else "Minor"
+print(status)
+
+# if age >= 20:
+#     print("Adult")
+#     print("Adult age is equal or greater than 20")
+# else:
+#     print("Minor")
+
+# Marks 80 or above -> Grade A
+# Marks 60 to 79 -> Grade B
+# Marks 40 to 59 -> Grade C
+# Marks below 40 -> Grade D
+
+Marks = 75
+grade = "Grade A" if Marks >= 80 else "Grade B" if Marks >= 60 and Marks <= 79 else "Grade C" if Marks >= 40 and Marks <= 59 else "Grade D"
+print(grade)
