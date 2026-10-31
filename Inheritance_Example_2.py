@@ -4,14 +4,14 @@ class class_A():
         self.name = name    
 
     def message(self):
-        print("This is class A method " + self.name)
+        print("This is class A method")
 
 class class_B(class_A):
-    def __init__(self, name):
-      self.message(name)
+    def __init__(self):
+      super().message()
 
     def message(self):
         print("This is class B method")
 
-b = class_B("Test A")
+b = class_B()
 b.message()
